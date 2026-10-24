@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Adaptación académica para SENA: Guía 10 - Evidencia GA10-220501097-AA6-EV01
+	Aprendiz: Juan Sebastian Rincon Farelo | Ficha: 3186612
+-->
+<html lang="es">
+	<head>
+		<title>SENA — GA10-220501097-AA6-EV01 | Publicación Web en Producción</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>SENA — GA10 AA6</h1>
+								<p>Archivos cargados en la plataforma de producción.<br />
+								Evidencia GA10-220501097-AA6-EV01 | Tecnólogo en Análisis y Desarrollo de Software (Ficha 3186612)</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Introducción</a></li>
+								<li><a href="#work">Despliegue</a></li>
+								<li><a href="#about">Verificación</a></li>
+								<li><a href="#contact">Ficha Técnica</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Introducción</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="Introducción al Despliegue" /></span>
+								<p><strong>Despliegue y Publicación en Internet:</strong> El paso de un software desde el entorno local de desarrollo hacia una plataforma de producción representa un hito fundamental en el ciclo de vida de la ingeniería de software. Esta evidencia práctica demuestra la carga, aprovisionamiento y acceso público de un sitio web estático utilizando la infraestructura de borde (Edge Network) de <strong>Cloudflare Pages</strong>.</p>
+								<p>A diferencia de los entornos locales simulados (como XAMPP o servidores de desarrollo), la publicación en producción expone la aplicación al tráfico mundial, requiriendo validaciones de latencia, seguridad de capa de transporte mediante certificados <strong>HTTPS</strong> y resolución global de nombres a través del Sistema de Nombres de Dominio (<strong>DNS</strong>).</p>
+								<p>Esta actividad complementa la formación del Tecnólogo en Análisis y Desarrollo de Software del SENA en la competencia <em>220501097: Implementar la solución de software de acuerdo con los requisitos de operación y modelos de referencia</em>.</p>
+							</article>
+
+						<!-- Work / Despliegue -->
+							<article id="work">
+								<h2 class="major">Arquitectura de Despliegue</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="Arquitectura de Hosting" /></span>
+								<p><strong>Plataforma de Hosting Seleccionada: Cloudflare Pages</strong></p>
+								<p>Para la publicación de este aplicativo estático se seleccionó Cloudflare Pages debido a su arquitectura distribuida globalmente en más de 300 ciudades, garantizando:</p>
+								<ul>
+									<li><strong>Entrega de Alto Rendimiento:</strong> Recursos estáticos (HTML5, CSS3, JavaScript, WebFonts e imágenes) cacheados y servidos desde el nodo perimetral más cercano al usuario final.</li>
+									<li><strong>Seguridad Criptográfica Nativa:</strong> Emisión automática de certificados SSL/TLS con cifrado HTTPS obligatorio y mitigación DDoS en tiempo real.</li>
+									<li><strong>Despliegue Directo (Direct Upload):</strong> Carga inmutable de artefactos estáticos sin sobrecargas de configuración de servidor web tradicional.</li>
+									<li><strong>Compresión Avanzada:</strong> Soporte nativo para algoritmos Brotli y Gzip, optimizando los tiempos de carga en navegadores de escritorio y dispositivos móviles.</li>
+								</ul>
+							</article>
+
+						<!-- About / Verificación -->
+							<article id="about">
+								<h2 class="major">Verificación Técnica</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="Validación y Calidad QA" /></span>
+								<p><strong>Auditoría de Calidad y Pruebas Automatizadas:</strong></p>
+								<p>La disponibilidad y estabilidad del despliegue en producción fueron auditadas exhaustivamente mediante la suite de automatización <strong>Playwright</strong>, cubriendo los siguientes vectores de validación:</p>
+								<ul>
+									<li><strong>Respuesta HTTP de Capa 7:</strong> Verificación de entrega con código de estado <code>HTTP/1.1 200 OK</code>.</li>
+									<li><strong>Renderizado Responsive:</strong> Pruebas de maquetación en resolución Desktop (1920 × 1080) y dispositivo móvil (390 × 844 viewport).</li>
+									<li><strong>Integridad de Recursos:</strong> Carga 100% exitosa de hojas de estilo (main.css), librerías interactivas (jQuery, util.js) y tipografías vectoriales (FontAwesome).</li>
+									<li><strong>Ausencia de Errores de Consola:</strong> Ejecución de scripts en el cliente con cero advertencias críticas o excepciones JavaScript no controladas.</li>
+									<li><strong>Independencia Local:</strong> Operación continua del sitio en Internet con total desconexión de los servidores locales del host.</li>
+								</ul>
+							</article>
+
+						<!-- Contact / Ficha Técnica -->
+							<article id="contact">
+								<h2 class="major">Ficha Técnica</h2>
+								<p><strong>Información Institucional del Entregable:</strong></p>
+								<div class="table-wrapper">
+									<table class="alt">
+										<tbody>
+											<tr>
+												<td><strong>Institución:</strong></td>
+												<td>Servicio Nacional de Aprendizaje (SENA)</td>
+											</tr>
+											<tr>
+												<td><strong>Centro de Formación:</strong></td>
+												<td>Centro de Electricidad, Electrónica y Telecomunicaciones (CEET)</td>
+											</tr>
+											<tr>
+												<td><strong>Programa Académico:</strong></td>
+												<td>Tecnólogo en Análisis y Desarrollo de Software (ADSO)</td>
+											</tr>
+											<tr>
+												<td><strong>Ficha de Caracterización:</strong></td>
+												<td>3186612</td>
+											</tr>
+											<tr>
+												<td><strong>Evidencia:</strong></td>
+												<td>GA10-220501097-AA6-EV01</td>
+											</tr>
+											<tr>
+												<td><strong>Aprendiz:</strong></td>
+												<td>Juan Sebastian Rincon Farelo</td>
+											</tr>
+											<tr>
+												<td><strong>Instructora / Asesora:</strong></td>
+												<td>Grace Silvana Campo Moron</td>
+											</tr>
+											<tr>
+												<td><strong>Vigencia:</strong></td>
+												<td>2026</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p><em>Este proyecto corresponde a un entregable académico legítimo y no recopila datos personales ni información financiera de usuarios.</em></p>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; 2026 Servicio Nacional de Aprendizaje SENA. Aprendiz: Juan Sebastian Rincon Farelo (Ficha 3186612).<br />
+						Diseño original de plantilla: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a> (Dimension) bajo licencia <a href="https://html5up.net/license" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 3.0</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
